@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/120120/b94cf62ecc0d475b8589524e5d2e94da
+url: http://rpubs.com/AhmedGad/120120
+when: 1445757816.21977

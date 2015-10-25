@@ -1,0 +1,45 @@
+---
+title: "Guss the Number"
+author: "Ahmed Gad"
+date: "October 24, 2015"
+output: html_document
+---
+
+The function below will generate a random number on each run of the application:
+-------
+
+```{r , eval= F}
+numberGuessed <- function(guess, number) {
+    returnValue <- "Nothing entered yet."
+    if (guess > 100) {
+        #print(guess)
+        #print(class(guess))
+        #print(class(100))
+        returnValue <- 'Above 100.\nPlease make a selection between 1 and 100.'
+    }
+    else if (guess < 1) {
+        #print(guess)
+        returnValue <- 'Below 1.\nPlease make a selection between 1 and 100.'
+    }
+    else if (guess > number) {
+        returnValue <- 'Higher than the number.'
+    }
+    else if (guess < number) {
+        returnValue <- 'Lower than the number.'
+    }
+    else if (guess == number) {
+        returnValue <- 'Correct!'
+    }
+    returnValue
+}
+```
+
+
+there will be an input text box for the user to enter his guss.
+after that the function will return a message saying that is the entered number is Higher, lower, or just right to the generated number.
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
